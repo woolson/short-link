@@ -1,0 +1,33 @@
+{
+  "name": "short-link",
+  "version": "1.0.0",
+  "description": "Convert long link to short with chinaz.",
+  "main": "src/index.js",
+  "bin": {
+    "short-link": "bin/index.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woolson/short-link.git"
+  },
+  "keywords": [
+    "short-link",
+    "long-link"
+  ],
+  "author": "Woolson Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woolson/short-link/issues"
+  },
+  "homepage": "https://github.com/woolson/short-link#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clipboardy": "^2.1.0",
+    "commander": "^4.1.0",
+    "ora": "^4.0.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {}
+}
