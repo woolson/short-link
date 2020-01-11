@@ -2,6 +2,7 @@ const request = require('request-promise-native')
 
 /** Converter API */
 exports.CONVERT_API = 'http://tool.chinaz.com/tools/dwz.aspx'
+
 /**
  * Converter
  * @param { String } longLink link need to convert
@@ -25,4 +26,12 @@ exports.convert = async function (longLink) {
   } else {
     throw new Error('Convert Failed!')
   }
+}
+
+/**
+ * Check link availability
+ * @param {string} link enter link
+ */
+exports.validLink = function (link) {
+  return `${link}`.slice(0, 4).toLowerCase() === 'http'
 }

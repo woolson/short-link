@@ -1,6 +1,6 @@
 {
   "name": "@woolson/short-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert long link to short with chinaz.",
   "main": "src/index.js",
   "bin": {
