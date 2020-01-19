@@ -20,9 +20,9 @@ exports.convert = async function (longLink) {
     }).toString()
   })
 
-  const shortDom = resData.match(/https:\/\/url.cn\/(\w|\d)+/g)[0]
-  if (shortDom) {
-    return shortDom
+  const shortLink = resData.match(/https:\/\/tinyurl.com\/(\w|\d)+/g)
+  if (shortLink && shortLink[0]) {
+    return shortLink[0]
   } else {
     throw new Error('Convert Failed!')
   }
